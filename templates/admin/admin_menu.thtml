@@ -1,0 +1,11 @@
+{# begin {templatelocation} #}
+
+<div class="admin_menu">
+ <a href="{site_url}/admin/plugins/hello/index.php">{homepage_label}</a> | 
+ <a href="{site_url}/admin/plugins/hello/email_group.php">{send_email_group}</a> | 
+ <a href="{site_url}/admin/plugins/hello/read_email.php">{read_email}</a> | 
+ <a href="{site_url}/admin/plugins/hello/manual.php">{manual}</a> | 
+  {configuration}
+</div>
+
+{# end {templatelocation} #}

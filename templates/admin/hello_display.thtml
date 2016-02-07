@@ -1,0 +1,7 @@
+{# begin {templatelocation} #}
+
+<div class="hello_display">
+ {hello_display}
+</div>
+
+{# end {templatelocation} #}
