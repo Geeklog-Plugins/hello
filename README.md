@@ -3,7 +3,7 @@ Geeklog hello plugin (hello)
 ##Docs
 http://geeklog.fr/downloads/index.php/hello
 ##Bugs & feature requests
-https://github.com/Geeklog-Plugins/monitor/hello
+https://github.com/Geeklog-Plugins/hello/issues
 ##Contributing
 1. Fork it
 2. Create your feature branch (git checkout -b my-new-feature)
