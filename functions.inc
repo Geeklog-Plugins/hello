@@ -386,6 +386,7 @@ function HELLO_mail($to, $subject, $message, $from = '', $html = false, $priorit
     $from = substr($from, 0, strcspn($from, "\r\n"));
     $subject = substr($subject, 0, strcspn($subject, "\r\n"));
     $subject = COM_emailEscape($subject);
+	$subject = utf8_decode($subject);
 
     include_once 'Mail.php';
     include_once 'Mail/RFC822.php';
@@ -575,7 +576,7 @@ function HELLO_emailUserTopics($online=true)
 	($online) ? $email_group = $LANG_HELLO01['mdigest'] : $email_group = $LANG_HELLO01['ddigest'];
 	$quantity = $nrows;
 
-	$content  = sprintf ($LANG_HELLO01['num_stories_digest'] . ' > ' . $lastrun, $count);
+	$content  = addslashes(sprintf ($LANG_HELLO01['num_stories_digest'] . ' > ' . $lastrun, $count));
 	
 	$sql_ajout_hello = "INSERT INTO {$_TABLES['hello']} (subject, creation, email_group, quantity, content) VALUES ('$subject', '$creation', '$email_group', '$quantity','$content')";
 	DB_query ($sql_ajout_hello);
