@@ -224,7 +224,8 @@ function send_messages($vars)
 	    $upload->setAllowedMimeTypes (array (
 		    	'text/csv'   => '.csv',
 		    	'text/comma-separated-values'  => '.csv',
-		    	'application/vnd.ms-excel' => '.csv'
+		    	'application/vnd.ms-excel' => '.csv',
+		    	'application/x-csv' => '.csv'
 		    	));
 	
 	    if (!$upload->setPath($_CONF['path_data'])) {
