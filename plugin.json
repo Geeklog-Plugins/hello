@@ -2,5 +2,8 @@
   "schema": 1,
   "id": "hello",
   "name": "Hello",
-  "icon": "admin/images/hello.png"
+  "icon": "admin/images/hello.png",
+  "requires": {
+    "geeklog": "2.1.1"
+  }
 }
